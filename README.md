@@ -1,17 +1,23 @@
-# OGC Building Block template
+# Wf4Ever Ontologies Building Blocks
 
-This template provides a working example of an [OGC Building Block](https:blocks.ogc.org). For more info see [the Documentation](https://ogcincubator.github.io/bblocks-docs/).
+This repository contains separate Building Blocks for each of the Wf4Ever ontologies.
 
-This template is a working automation recipe to define, test and document a set of Building Blocks.
+## Building Blocks
 
-The automation-generated documentation for this example is here: [https://opengeospatial.github.io/bblock-template/](https://opengeospatial.github.io/bblock-template/)
+### 1. wfdesc - Workflow Description Ontology
+**ID**: `ogc.bbr.wf4ever.wfdesc`  
+**Namespace**: `http://purl.org/wf4ever/wfdesc#`
 
-[Examples of using this with typical applications of OGC standards](https://github.com/ogcincubator/bblocks-examples)
+### 2. wfprov - Workflow Provenance Ontology
+**ID**: `ogc.bbr.wf4ever.wfprov`  
+**Namespace**: `http://purl.org/wf4ever/wfprov#`
 
-Please replace the contents of this README with information about your Building Block(s).
+### 3. ro - Research Object Ontology
+**ID**: `ogc.bbr.wf4ever.ro`  
+**Namespace**: `http://purl.org/wf4ever/ro#`
 
-# How to use this template
+## Building
 
-[More information on design and usage](https://github.com/opengeospatial/bblock-template/blob/master/USAGE.md)
-
-
+```bash
+./build.sh
+```
