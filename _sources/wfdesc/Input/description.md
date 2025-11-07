@@ -14,64 +14,13 @@ wfdesc:Parameter
 └── wfdesc:Input
 ```
 
-## Properties
-
-Inherits all properties from **Parameter**:
-
-| Property | Type | Required | Description |
-|----------|------|----------|-------------|
-| `@type` | string | Yes | Must be "Input" |
-| `@id` | URI | No | Unique identifier |
-| `name` | string | No | Human-readable name |
-| `description` | string | No | Description of what this input expects |
-
 ## Usage in Workflows
 
-Inputs are declared using the `hasInput` property on a Process:
-
-```json
-{
-  "@type": "Process",
-  "name": "ImageProcessor",
-  "hasInput": [
-    {
-      "@type": "Input",
-      "@id": "#input-image",
-      "name": "inputImage",
-      "description": "The image to process"
-    }
-  ]
-}
-```
+Inputs are declared using the `hasInput` property on a Process.
 
 ## Data Flow
 
-Inputs can be connected to Outputs via DataLinks:
-
-```json
-{
-  "@type": "DataLink",
-  "hasSource": {
-    "@type": "Output",
-    "@id": "#process1-output"
-  },
-  "hasSink": {
-    "@type": "Input",
-    "@id": "#process2-input"
-  }
-}
-```
-
-## Example
-
-```json
-{
-  "@type": "Input",
-  "@id": "http://example.org/workflow/input/image",
-  "name": "sourceImage",
-  "description": "Source satellite image in GeoTIFF format"
-}
-```
+Inputs can be connected to Outputs via DataLinks.
 
 ## Related Classes
 

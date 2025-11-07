@@ -8,15 +8,6 @@ This might be a Named Graph or a resource which can be resolved separately from 
 
 The RDF graph SHOULD mention the resources identified by `ao:annotatesResource`, preferably by using their URIs as subject or object of RDF statements.
 
-## Properties
-
-- `@id` : Unique identifier for the annotation
-- `@type` : Must be SemanticAnnotation
-- `body` : URI pointing to an RDF Graph containing semantic annotation content
-- `annotatesResource` : The resource(s) that this annotation describes
-- `created` : Creation date of the annotation
-- `creator` : The agent who created this annotation
-
 ## Relations
 
 - Annotates resources via `ao:annotatesResource`
@@ -37,28 +28,3 @@ For `ro:SemanticAnnotation`, the graph body merely needs to **mention** the anno
 - Linking resources using semantic relationships
 - Provenance graphs describing resource creation
 - Quality assessments with structured vocabularies
-
-## Example
-
-```json
-{
-  "@id": "#annotation-1",
-  "@type": "SemanticAnnotation",
-  "annotatesResource": "data/results.csv",
-  "body": ".ro/annotations/metadata-1.ttl",
-  "created": "2025-11-07T10:00:00Z",
-  "creator": "https://orcid.org/0000-0002-1825-0097"
-}
-```
-
-Where `metadata-1.ttl` contains RDF triples like:
-
-```turtle
-@prefix dc: <http://purl.org/dc/terms/> .
-@prefix prov: <http://www.w3.org/ns/prov#> .
-
-<data/results.csv> 
-    dc:title "NDVI Analysis Results" ;
-    dc:format "text/csv" ;
-    prov:wasGeneratedBy <#workflow-run-123> .
-```

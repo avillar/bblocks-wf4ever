@@ -38,23 +38,7 @@ The wf4ever ontology imports and extends:
 
 ## Usage in CWL Provenance
 
-In CWLProv (Common Workflow Language Provenance), wf4ever types are used to provide semantic precision:
-
-```json
-{
-  "prov:type": [
-    {
-      "$": "wfprov:Artifact",
-      "type": "prov:QUALIFIED_NAME"
-    },
-    {
-      "$": "wf4ever:File",
-      "type": "prov:QUALIFIED_NAME"
-    }
-  ],
-  "cwlprov:basename": "results.csv"
-}
-```
+In CWLProv (Common Workflow Language Provenance), wf4ever types are used to provide semantic precision through dual typing.
 
 This dual typing allows:
 - **Generic queries**: Find all `wfprov:Artifact` entities
