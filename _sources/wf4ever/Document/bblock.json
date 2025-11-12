@@ -1,0 +1,22 @@
+{
+  "name": "wf4ever:Document",
+  "abstract": "A document artifact - textual or formatted content such as PDF, HTML, or text files.",
+  "status": "under-development",
+  "dateTimeAddition": "2025-11-07T00:00:00Z",
+  "itemClass": "datatype",
+  "register": "ogc-wf4ever",
+  "version": "1.0",
+  "dateOfLastChange": "2025-11-07",
+  "sources": [
+    {
+      "title": "Wf4Ever Ontology - Document",
+      "link": "http://purl.org/wf4ever/wf4ever#Document"
+    }
+  ],
+  "maturity": "development",
+  "scope": "unstable",
+  "profileOf": ["ogc.bbr.wf4ever.wfdesc.Artifact"],
+  "tags": ["wf4ever", "artifact", "document"],
+  "group": "Wf4Ever - wf4ever",
+  "itemIdentifier": "ogc.bbr.wf4ever.wf4ever.Document"
+}

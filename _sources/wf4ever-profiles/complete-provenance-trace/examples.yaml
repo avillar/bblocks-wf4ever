@@ -1,0 +1,5 @@
+- title: Complete Mangrove Workflow Provenance Trace
+  description: Complete end-to-end provenance trace combining Research Object, Workflow description, and execution trace from a real CWLProv workflow run processing Sentinel-2 mangrove imagery
+  snippets:
+    - language: json
+      ref: examples/mangrove-complete-trace.json

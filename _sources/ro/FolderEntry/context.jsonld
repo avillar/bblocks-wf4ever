@@ -1,0 +1,13 @@
+{
+  "@context": {
+    "ro": "http://purl.org/wf4ever/ro#",
+    "ore": "http://www.openarchives.org/ore/terms/",
+    "@vocab": "http://purl.org/wf4ever/ro#",
+    "FolderEntry": "ro:FolderEntry",
+    "entryName": "ro:entryName",
+    "proxyFor": {
+      "@id": "ore:proxyFor",
+      "@type": "@id"
+    }
+  }
+}

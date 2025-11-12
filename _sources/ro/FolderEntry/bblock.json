@@ -1,0 +1,29 @@
+{
+  "name": "ro:FolderEntry",
+  "abstract": "An entry within a folder that associates a name with a resource. FolderEntries provide the mapping between folder paths and actual resources, similar to filesystem directory entries.",
+  "status": "under-development",
+  "dateTimeAddition": "2025-11-07T00:00:00Z",
+  "itemClass": "datatype",
+  "register": "ogc-wf4ever",
+  "version": "1.0",
+  "dateOfLastChange": "2025-11-07",
+  "sources": [
+    {
+      "title": "Research Object Ontology - FolderEntry",
+      "link": "http://purl.org/wf4ever/ro#FolderEntry"
+    }
+  ],
+  "maturity": "development",
+  "scope": "unstable",
+  "dependsOn": [
+    "ogc.bbr.wf4ever.ro.Resource",
+    "ogc.bbr.wf4ever.ro.Folder"
+  ],
+  "tags": [
+    "ro",
+    "folder-entry",
+    "organization"
+  ],
+  "group": "Wf4Ever - ro",
+  "itemIdentifier": "ogc.bbr.wf4ever.ro.FolderEntry"
+}

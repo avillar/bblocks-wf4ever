@@ -1,0 +1,17 @@
+{
+  "name": "wf4ever:Image",
+  "abstract": "An image artifact - visual representation such as PNG, JPEG, or raster geospatial imagery.",
+  "status": "under-development",
+  "dateTimeAddition": "2025-11-07T00:00:00Z",
+  "itemClass": "datatype",
+  "register": "ogc-wf4ever",
+  "version": "1.0",
+  "dateOfLastChange": "2025-11-07",
+  "sources": [{"title": "Wf4Ever Ontology - Image", "link": "http://purl.org/wf4ever/wf4ever#Image"}],
+  "maturity": "development",
+  "scope": "unstable",
+  "profileOf": ["ogc.bbr.wf4ever.wfdesc.Artifact"],
+  "tags": ["wf4ever", "artifact", "image"],
+  "group": "Wf4Ever - wf4ever",
+  "itemIdentifier": "ogc.bbr.wf4ever.wf4ever.Image"
+}

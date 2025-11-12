@@ -1,0 +1,28 @@
+{
+  "name": "wf4ever:Dataset",
+  "abstract": "A dataset artifact - a collection of data values or files representing a scientific dataset.",
+  "status": "under-development",
+  "dateTimeAddition": "2025-11-07T00:00:00Z",
+  "itemClass": "datatype",
+  "register": "ogc-wf4ever",
+  "version": "1.0",
+  "dateOfLastChange": "2025-11-07",
+  "sources": [
+    {
+      "title": "Wf4Ever Ontology - Dataset",
+      "link": "http://purl.org/wf4ever/wf4ever#Dataset"
+    }
+  ],
+  "maturity": "development",
+  "scope": "unstable",
+  "profileOf": [
+    "ogc.bbr.wf4ever.wfdesc.Artifact"
+  ],
+  "tags": [
+    "wf4ever",
+    "artifact",
+    "dataset"
+  ],
+  "group": "Wf4Ever - wf4ever",
+  "itemIdentifier": "ogc.bbr.wf4ever.wf4ever.Dataset"
+}

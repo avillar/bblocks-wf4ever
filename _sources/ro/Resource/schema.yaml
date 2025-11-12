@@ -1,0 +1,19 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+description: A resource that can be aggregated in a Research Object
+type: object
+properties:
+  '@id':
+    type: string
+    format: uri
+    description: Unique identifier for the resource
+  '@type':
+    type: string
+    description: Type of the resource
+  name:
+    type: string
+    description: Name of the resource
+  description:
+    type: string
+    description: Description of the resource
+required:
+  - '@id'

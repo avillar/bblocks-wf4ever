@@ -1,0 +1,5 @@
+- title: Mangrove Analysis Output Folder
+  description: Real-world folder structure from mangrove biomass analysis with FolderEntry aggregates (from CWLProv execution)
+  snippets:
+    - language: json
+      ref: examples/mangrove-folder.json

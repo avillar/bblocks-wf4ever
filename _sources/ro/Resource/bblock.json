@@ -1,0 +1,25 @@
+{
+  "name": "ro:Resource",
+  "abstract": "A resource that can be aggregated in a Research Object. Resources represent any artifact that contributes to the research outcome, such as data files, workflows, documentation, or external references.",
+  "status": "under-development",
+  "dateTimeAddition": "2025-11-07T00:00:00Z",
+  "itemClass": "datatype",
+  "register": "ogc-wf4ever",
+  "version": "1.0",
+  "dateOfLastChange": "2025-11-07",
+  "sources": [
+    {
+      "title": "Research Object Ontology - Resource",
+      "link": "http://purl.org/wf4ever/ro#Resource"
+    }
+  ],
+  "maturity": "development",
+  "scope": "unstable",
+  "tags": [
+    "ro",
+    "resource",
+    "research-object"
+  ],
+  "group": "Wf4Ever - ro",
+  "itemIdentifier": "ogc.bbr.wf4ever.ro.Resource"
+}

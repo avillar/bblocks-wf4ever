@@ -1,0 +1,25 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+description: A software agent that executes workflows
+allOf:
+  - $ref: https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.yaml#/$defs/Agent
+type: object
+properties:
+  '@id':
+    type: string
+    format: uri
+    description: Unique identifier for the workflow engine
+  '@type':
+    const: WorkflowEngine
+    description: Type must be WorkflowEngine
+  name:
+    type: string
+    description: Name of the workflow engine
+  version:
+    type: string
+    description: Version of the workflow engine
+  description:
+    type: string
+    description: Description of the workflow engine
+required:
+  - '@id'
+  - '@type'

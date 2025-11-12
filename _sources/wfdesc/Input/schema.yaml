@@ -1,0 +1,9 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+description: An input parameter to a workflow process
+type: object
+allOf:
+  - $ref: ../Parameter/schema.yaml
+properties:
+  "@type":
+    const: Input
+    description: Type identifier for a wfdesc Input

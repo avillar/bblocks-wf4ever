@@ -1,0 +1,9 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+description: An output parameter from a workflow process
+type: object
+allOf:
+  - $ref: ../Parameter/schema.yaml
+properties:
+  "@type":
+    const: Output
+    description: Type identifier for a wfdesc Output

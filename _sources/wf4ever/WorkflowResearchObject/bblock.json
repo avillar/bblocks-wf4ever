@@ -1,0 +1,18 @@
+{
+  "name": "wf4ever:WorkflowResearchObject",
+  "abstract": "A research object that aggregates at least one workflow description, along with associated resources and provenance.",
+  "highlighted": true,
+  "status": "under-development",
+  "dateTimeAddition": "2025-11-07T00:00:00Z",
+  "itemClass": "datatype",
+  "register": "ogc-wf4ever",
+  "version": "1.0",
+  "dateOfLastChange": "2025-11-07",
+  "sources": [{"title": "Wf4Ever Ontology - WorkflowResearchObject", "link": "http://purl.org/wf4ever/wf4ever#WorkflowResearchObject"}],
+  "maturity": "development",
+  "scope": "unstable",
+  "dependsOn": ["ogc.bbr.wf4ever.ro.ResearchObject", "ogc.bbr.wf4ever.wfdesc.Workflow"],
+  "tags": ["wf4ever", "research-object", "workflow"],
+  "group": "Wf4Ever - wf4ever",
+  "itemIdentifier": "ogc.bbr.wf4ever.wf4ever.WorkflowResearchObject"
+}

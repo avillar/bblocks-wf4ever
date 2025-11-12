@@ -1,0 +1,29 @@
+{
+  "name": "wfdesc:Process",
+  "abstract": "A computational process or task in a workflow. Processes have inputs, outputs, and perform computations. This is the base class for atomic processes and composite Workflows.",
+  "status": "under-development",
+  "dateTimeAddition": "2025-11-07T00:00:00Z",
+  "itemClass": "datatype",
+  "register": "ogc-wf4ever",
+  "version": "1.0",
+  "dateOfLastChange": "2025-11-07",
+  "dependsOn": [
+    "ogc.bbr.wf4ever.wfdesc.Input",
+    "ogc.bbr.wf4ever.wfdesc.Output"
+  ],
+  "sources": [
+    {
+      "title": "Workflow Description Ontology - Process",
+      "link": "http://purl.org/wf4ever/wfdesc#Process"
+    }
+  ],
+  "maturity": "development",
+  "scope": "unstable",
+  "tags": [
+    "workflow",
+    "wfdesc",
+    "process",
+    "computation"
+  ],
+  "group": "Wf4Ever - wfdesc"
+}

@@ -1,0 +1,28 @@
+{
+  "name": "ro:Folder",
+  "abstract": "A folder that organizes resources within a Research Object. Folders provide hierarchical structure, similar to filesystem directories, allowing logical grouping of related resources.",
+  "status": "under-development",
+  "dateTimeAddition": "2025-11-07T00:00:00Z",
+  "itemClass": "datatype",
+  "register": "ogc-wf4ever",
+  "version": "1.0",
+  "dateOfLastChange": "2025-11-07",
+  "sources": [
+    {
+      "title": "Research Object Ontology - Folder",
+      "link": "http://purl.org/wf4ever/ro#Folder"
+    }
+  ],
+  "maturity": "development",
+  "scope": "unstable",
+  "profileOf": [
+    "ogc.bbr.wf4ever.ro.Resource"
+  ],
+  "tags": [
+    "ro",
+    "folder",
+    "organization"
+  ],
+  "group": "Wf4Ever - ro",
+  "itemIdentifier": "ogc.bbr.wf4ever.ro.Folder"
+}

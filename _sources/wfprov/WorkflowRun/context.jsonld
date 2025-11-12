@@ -1,0 +1,22 @@
+{
+  "@context": {
+    "wfprov": "http://purl.org/wf4ever/wfprov#",
+    "wfdesc": "http://purl.org/wf4ever/wfdesc#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "@vocab": "http://purl.org/wf4ever/wfprov#",
+    "WorkflowRun": "wfprov:WorkflowRun",
+    "describedByWorkflow": {
+      "@id": "wfprov:describedByWorkflow",
+      "@type": "@id"
+    },
+    "hadSubProcessRun": {
+      "@reverse": "wfprov:wasPartOfWorkflowRun",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "wasEnactedBy": {
+      "@id": "prov:wasAssociatedWith",
+      "@type": "@id"
+    }
+  }
+}

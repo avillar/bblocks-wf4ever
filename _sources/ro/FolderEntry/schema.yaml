@@ -1,0 +1,23 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+description: An entry within a folder associating a name with a resource
+type: object
+properties:
+  '@id':
+    type: string
+    format: uri
+    description: Unique identifier for the folder entry
+  '@type':
+    const: FolderEntry
+    description: Type must be FolderEntry
+  entryName:
+    type: string
+    description: Name of this entry within the folder
+  proxyFor:
+    type: string
+    format: uri
+    description: The resource that this entry represents
+required:
+  - '@id'
+  - '@type'
+  - entryName
+  - proxyFor

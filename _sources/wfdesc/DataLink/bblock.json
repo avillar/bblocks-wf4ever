@@ -1,0 +1,29 @@
+{
+  "name": "wfdesc:DataLink",
+  "abstract": "A connection between processes in a workflow, linking an output of one process to an input of another process. DataLinks define the data flow in a workflow.",
+  "status": "under-development",
+  "dateTimeAddition": "2025-11-07T00:00:00Z",
+  "itemClass": "datatype",
+  "register": "ogc-wf4ever",
+  "version": "1.0",
+  "dateOfLastChange": "2025-11-07",
+  "dependsOn": [
+    "ogc.bbr.wf4ever.wfdesc.Input",
+    "ogc.bbr.wf4ever.wfdesc.Output"
+  ],
+  "sources": [
+    {
+      "title": "Workflow Description Ontology - DataLink",
+      "link": "http://purl.org/wf4ever/wfdesc#DataLink"
+    }
+  ],
+  "maturity": "development",
+  "scope": "unstable",
+  "tags": [
+    "workflow",
+    "wfdesc",
+    "datalink",
+    "dataflow"
+  ],
+  "group": "Wf4Ever - wfdesc"
+}

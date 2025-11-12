@@ -1,0 +1,30 @@
+{
+  "name": "ro:ResearchObject",
+  "abstract": "A Research Object that bundles resources, data, methods, and contextual information. It provides a structured way to package research outputs with their provenance, making them portable, shareable, and preservable.",
+  "highlighted": true,
+  "status": "under-development",
+  "dateTimeAddition": "2025-11-07T00:00:00Z",
+  "itemClass": "datatype",
+  "register": "ogc-wf4ever",
+  "version": "1.0",
+  "dateOfLastChange": "2025-11-07",
+  "sources": [
+    {
+      "title": "Research Object Ontology - ResearchObject",
+      "link": "http://purl.org/wf4ever/ro#ResearchObject"
+    }
+  ],
+  "maturity": "development",
+  "scope": "unstable",
+  "dependsOn": [
+    "ogc.bbr.wf4ever.ro.Resource",
+    "ogc.bbr.wf4ever.ro.Manifest"
+  ],
+  "tags": [
+    "ro",
+    "research-object",
+    "aggregation"
+  ],
+  "group": "Wf4Ever - ro",
+  "itemIdentifier": "ogc.bbr.wf4ever.ro.ResearchObject"
+}

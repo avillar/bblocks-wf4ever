@@ -1,0 +1,18 @@
+{
+  "@context": {
+    "wfprov": "http://purl.org/wf4ever/wfprov#",
+    "wfdesc": "http://purl.org/wf4ever/wfdesc#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "@vocab": "http://purl.org/wf4ever/wfprov#",
+    "Artifact": "wfprov:Artifact",
+    "describedByParameter": {
+      "@id": "wfprov:describedByParameter",
+      "@type": "@id"
+    },
+    "wasOutputFrom": {
+      "@id": "prov:wasGeneratedBy",
+      "@type": "@id"
+    },
+    "value": "prov:value"
+  }
+}

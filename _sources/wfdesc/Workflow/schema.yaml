@@ -1,0 +1,19 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+description: A workflow composed of sub-processes and data links
+type: object
+allOf:
+  - $ref: ../Process/schema.yaml
+properties:
+  "@type":
+    const: Workflow
+    description: Type identifier for a wfdesc Workflow
+  hasSubProcess:
+    type: array
+    items:
+      $ref: ../Process/schema.yaml
+    description: Sub-processes within this workflow
+  hasDataLink:
+    type: array
+    items:
+      $ref: ../DataLink/schema.yaml
+    description: Data flow connections between sub-processes

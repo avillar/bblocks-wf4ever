@@ -1,0 +1,29 @@
+{
+  "name": "wfdesc:WorkflowInstance",
+  "abstract": "A specialized workflow description that includes all concrete data, parameters, and settings required to execute a specific workflow run. It bridges the gap between abstract workflow descriptions and concrete workflow executions.",
+  "status": "under-development",
+  "dateTimeAddition": "2025-11-07T00:00:00Z",
+  "itemClass": "datatype",
+  "register": "ogc-wf4ever",
+  "version": "1.0",
+  "dateOfLastChange": "2025-11-07",
+  "profileOf": [
+    "ogc.bbr.wf4ever.wfdesc.Workflow"
+  ],
+  "sources": [
+    {
+      "title": "Workflow Description Ontology - WorkflowInstance",
+      "link": "http://purl.org/wf4ever/wfdesc#WorkflowInstance"
+    }
+  ],
+  "maturity": "development",
+  "scope": "unstable", 
+  "tags": [
+    "workflow",
+    "wfdesc", 
+    "instance",
+    "execution",
+    "configuration"
+  ],
+  "group": "Wf4Ever - wfdesc"
+}

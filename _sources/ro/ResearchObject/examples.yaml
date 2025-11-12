@@ -1,0 +1,5 @@
+- title: Mangrove Workflow Research Object
+  description: Real-world Research Object from a mangrove biomass analysis workflow execution (CWLProv 0.6.0, BagIt format)
+  snippets:
+    - language: json
+      ref: examples/mangrove-ro.json

@@ -1,0 +1,31 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+description: A folder organizing resources in a Research Object
+type: object
+properties:
+  '@id':
+    type: string
+    format: uri
+    description: Unique identifier for the folder
+  '@type':
+    const: Folder
+    description: Type must be Folder
+  name:
+    type: string
+    description: Name of the folder
+  description:
+    type: string
+    description: Description of the folder
+  hasEntry:
+    type: array
+    items:
+      type: object
+      properties:
+        '@id':
+          type: string
+          format: uri
+      required:
+        - '@id'
+    description: Entries contained in this folder
+required:
+  - '@id'
+  - '@type'

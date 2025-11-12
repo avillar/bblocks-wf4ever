@@ -1,0 +1,26 @@
+{
+  "name": "wfprov:WorkflowEngine",
+  "abstract": "A software agent that executes workflows. The WorkflowEngine is responsible for enacting workflow and process executions, managing the execution environment and resources.",
+  "status": "under-development",
+  "dateTimeAddition": "2025-11-07T00:00:00Z",
+  "itemClass": "datatype",
+  "register": "ogc-wf4ever",
+  "version": "1.0",
+  "dateOfLastChange": "2025-11-07",
+  "sources": [
+    {
+      "title": "Workflow Provenance Ontology - WorkflowEngine",
+      "link": "http://purl.org/wf4ever/wfprov#WorkflowEngine"
+    }
+  ],
+  "maturity": "development",
+  "scope": "unstable",
+  "tags": [
+    "wfprov",
+    "workflow-engine",
+    "agent",
+    "execution"
+  ],
+  "group": "Wf4Ever - wfprov",
+  "itemIdentifier": "ogc.bbr.wf4ever.wfprov.WorkflowEngine"
+}

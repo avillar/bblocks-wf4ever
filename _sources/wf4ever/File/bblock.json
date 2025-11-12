@@ -1,0 +1,28 @@
+{
+  "name": "wf4ever:File",
+  "abstract": "A file artifact - a specialization of wfdesc:Artifact representing a file-based data entity used or produced by workflow execution.",
+  "status": "under-development",
+  "dateTimeAddition": "2025-11-07T00:00:00Z",
+  "itemClass": "datatype",
+  "register": "ogc-wf4ever",
+  "version": "1.0",
+  "dateOfLastChange": "2025-11-07",
+  "sources": [
+    {
+      "title": "Wf4Ever Ontology - File",
+      "link": "http://purl.org/wf4ever/wf4ever#File"
+    }
+  ],
+  "maturity": "development",
+  "scope": "unstable",
+  "profileOf": [
+    "ogc.bbr.wf4ever.wfdesc.Artifact"
+  ],
+  "tags": [
+    "wf4ever",
+    "artifact",
+    "file"
+  ],
+  "group": "Wf4Ever - wf4ever",
+  "itemIdentifier": "ogc.bbr.wf4ever.wf4ever.File"
+}

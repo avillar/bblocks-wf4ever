@@ -1,0 +1,29 @@
+{
+  "name": "wfprov:Artifact",
+  "abstract": "A data entity that was used as input or generated as output during a workflow execution. Artifacts are the data products consumed or produced by process runs.",
+  "status": "under-development",
+  "dateTimeAddition": "2025-11-07T00:00:00Z",
+  "itemClass": "datatype",
+  "register": "ogc-wf4ever",
+  "version": "1.0",
+  "dateOfLastChange": "2025-11-07",
+  "dependsOn": [
+    "ogc.bbr.wf4ever.wfdesc.Parameter"
+  ],
+  "sources": [
+    {
+      "title": "Workflow Provenance Ontology - Artifact",
+      "link": "http://purl.org/wf4ever/wfprov#Artifact"
+    }
+  ],
+  "maturity": "development",
+  "scope": "unstable",
+  "tags": [
+    "wfprov",
+    "artifact",
+    "provenance",
+    "data"
+  ],
+  "group": "Wf4Ever - wfprov",
+  "itemIdentifier": "ogc.bbr.wf4ever.wfprov.Artifact"
+}

@@ -1,0 +1,27 @@
+{
+  "name": "ro:SemanticAnnotation",
+  "abstract": "A semantic annotation is a specialization of ao:Annotation which requires that the annotation body points to an RDF Graph containing semantic information about the annotated resource.",
+  "status": "under-development",
+  "dateTimeAddition": "2025-11-07T00:00:00Z",
+  "itemClass": "datatype",
+  "register": "ogc-wf4ever",
+  "version": "1.0",
+  "dateOfLastChange": "2025-11-07",
+  "sources": [
+    {
+      "title": "Research Object Ontology - SemanticAnnotation",
+      "link": "http://purl.org/wf4ever/ro#SemanticAnnotation"
+    }
+  ],
+  "maturity": "development",
+  "scope": "unstable",
+  "dependsOn": [],
+  "tags": [
+    "ro",
+    "research-object",
+    "annotation",
+    "semantic"
+  ],
+  "group": "Wf4Ever - ro",
+  "itemIdentifier": "ogc.bbr.wf4ever.ro.SemanticAnnotation"
+}

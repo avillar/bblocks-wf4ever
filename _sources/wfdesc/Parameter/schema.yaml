@@ -1,0 +1,31 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+description: A parameter of a workflow process
+type: object
+properties:
+  "@type":
+    type: string
+    description: Type identifier for a wfdesc Parameter or its subclasses
+  "@id":
+    type: string
+    format: uri
+    description: Unique identifier for this parameter
+  name:
+    type: string
+    description: Name of the parameter
+  description:
+    type: string
+    description: Description of the parameter
+  hasArtifact:
+    type: object
+    description: Links this parameter to an artifact containing concrete data or values
+    properties:
+      "@type":
+        const: "Artifact"
+      "@id":
+        type: string
+        format: uri
+      value:
+        description: The concrete value or data reference
+      description:
+        type: string
+    required: ["@type"]

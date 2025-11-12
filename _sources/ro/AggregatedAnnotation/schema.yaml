@@ -1,0 +1,32 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+description: An annotation about resources in a Research Object
+type: object
+properties:
+  '@id':
+    type: string
+    format: uri
+    description: Unique identifier for the annotation
+  '@type':
+    const: AggregatedAnnotation
+    description: Type must be AggregatedAnnotation
+  annotatesAggregatedResource:
+    oneOf:
+      - type: string
+        format: uri
+      - type: array
+        items:
+          type: string
+          format: uri
+    description: The resource(s) that this annotation describes
+  body:
+    type: string
+    format: uri
+    description: The body of the annotation (typically a URI to an annotation document)
+  created:
+    type: string
+    format: date-time
+    description: Creation date of the annotation
+required:
+  - '@id'
+  - '@type'
+  - annotatesAggregatedResource

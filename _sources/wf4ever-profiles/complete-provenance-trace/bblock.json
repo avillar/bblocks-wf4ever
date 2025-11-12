@@ -1,0 +1,39 @@
+{
+  "itemIdentifier": "ogc.bbr.wf4ever.wf4ever-profiles.complete-provenance-trace",
+  "name": "Complete Workflow Provenance Trace",
+  "abstract": "Master profile combining Research Object, Workflow Description, and Workflow Execution Provenance",
+  "status": "under-development",
+  "dateTimeAddition": "2025-01-11T00:00:00Z",
+  "itemClass": "schema",
+  "register": "wf4ever",
+  "version": "0.1",
+  "dateOfLastChange": "2025-01-11",
+  "maturity": "development",
+  "scope": "unstable",
+  "sources": [
+    {
+      "title": "Wf4Ever Research Object Model",
+      "link": "http://purl.org/wf4ever/model"
+    },
+    {
+      "title": "CWLProv - Provenance profiles for Common Workflow Language",
+      "link": "https://w3id.org/cwl/prov"
+    }
+  ],
+  "sourceSchema": "schema.yaml",
+  "sourceContext": "context.jsonld",
+  "dependsOn": [
+    "ogc.bbr.wf4ever.ro.ResearchObject",
+    "ogc.bbr.wf4ever.wfdesc.Workflow",
+    "ogc.bbr.wf4ever.wfprov.WorkflowRun"
+  ],
+  "tags": [
+    "provenance",
+    "workflow",
+    "research-object",
+    "cwl",
+    "profile",
+    "end-to-end"
+  ],
+  "description": "## Description\n\nThis master profile combines all elements of the Wf4Ever ontology suite to represent a complete workflow provenance trace:\n\n- **Research Object (RO)**: Container aggregating all workflow-related resources\n- **Workflow Description (WFDESC)**: Prospective provenance - the workflow structure and specification\n- **Workflow Execution (WFPROV)**: Retrospective provenance - the actual execution trace\n\nThis building block demonstrates the full integration of:\n1. Workflow structure (inputs, outputs, steps)\n2. Execution trace (runs, artifacts, agents)\n3. Research object packaging (aggregation, annotations, manifest)\n\n## Purpose\n\nThis profile serves multiple purposes:\n- **Validation**: End-to-end test of the complete Wf4Ever model\n- **Documentation**: Demonstrates how all pieces fit together\n- **Interoperability**: Shows mapping to PROV-O and other standards\n- **Real-world example**: Based on actual CWLProv data from scientific workflows\n\n## Use Cases\n\n1. **Scientific Workflow Archival**: Package complete workflow execution for reproducibility\n2. **Provenance Tracking**: Track data lineage from input to output through workflow steps\n3. **Workflow Sharing**: Share not just the workflow definition, but execution traces and results\n4. **Compliance**: Meet FAIR data principles with complete provenance metadata\n\n## Structure\n\nA complete provenance trace contains:\n\n```\nResearch Object\n├── Manifest (describes RO)\n├── Workflow (wfdesc:Workflow)\n│   ├── Inputs (wfdesc:Input)\n│   ├── Outputs (wfdesc:Output)\n│   └── Processes (wfdesc:Process)\n├── WorkflowRun (wfprov:WorkflowRun)\n│   ├── Used (input artifacts)\n│   ├── Generated (output artifacts)\n│   ├── wasAssociatedWith (agents/engines)\n│   └── ProcessRuns (sub-executions)\n└── Annotations (metadata, attributions)\n```\n\n## Mapping to Standards\n\n- **PROV-O**: WorkflowRun → prov:Activity, Artifacts → prov:Entity\n- **DCAT**: Research Object → dcat:Dataset\n- **OGC API Processes**: Workflow → Process description\n- **ORE**: Research Object uses ORE aggregation model\n"
+}

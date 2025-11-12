@@ -1,0 +1,48 @@
+{
+  "@context": {
+    "wfdesc": "http://purl.org/wf4ever/wfdesc#",
+    "wfprov": "http://purl.org/wf4ever/wfprov#",
+    "ro": "http://purl.org/wf4ever/ro#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "ore": "http://www.openarchives.org/ore/terms/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "@vocab": "http://purl.org/wf4ever/",
+    "CompleteProvenanceTrace": "http://purl.org/wf4ever/profiles#CompleteProvenanceTrace",
+    "researchObject": {
+      "@id": "http://purl.org/wf4ever/profiles#hasResearchObject",
+      "@type": "@id"
+    },
+    "workflow": {
+      "@id": "http://purl.org/wf4ever/profiles#hasWorkflow",
+      "@type": "@id"
+    },
+    "workflowRun": {
+      "@id": "http://purl.org/wf4ever/profiles#hasWorkflowRun",
+      "@type": "@id"
+    },
+    "manifest": {
+      "@id": "http://purl.org/wf4ever/profiles#hasManifest",
+      "@type": "@id"
+    },
+    "metadata": {
+      "@id": "http://purl.org/wf4ever/profiles#metadata"
+    },
+    "created": {
+      "@id": "http://purl.org/dc/terms/created",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "creator": {
+      "@id": "http://purl.org/dc/terms/creator",
+      "@type": "@id"
+    },
+    "description": {
+      "@id": "http://purl.org/dc/terms/description"
+    },
+    "keywords": {
+      "@id": "http://www.w3.org/ns/dcat#keyword"
+    }
+  }
+}

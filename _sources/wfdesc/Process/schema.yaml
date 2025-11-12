@@ -1,0 +1,31 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+description: A computational process in a workflow
+type: object
+properties:
+  "@type":
+    oneOf:
+      - const: Process
+      - const: Workflow
+    description: Type identifier for a wfdesc Process or Workflow
+  "@id":
+    type: string
+    format: uri
+    description: Unique identifier for this process
+  name:
+    type: string
+    description: Name of the process
+  description:
+    type: string
+    description: Description of what this process does
+  hasInput:
+    type: array
+    items:
+      $ref: ../Input/schema.yaml
+    description: Input parameters for this process
+  hasOutput:
+    type: array
+    items:
+      $ref: ../Output/schema.yaml
+    description: Output parameters produced by this process
+required:
+  - "@type"

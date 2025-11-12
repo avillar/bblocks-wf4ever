@@ -1,0 +1,27 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+description: A manifest describing a Research Object
+type: object
+properties:
+  '@id':
+    type: string
+    format: uri
+    description: Unique identifier for the manifest
+  '@type':
+    const: Manifest
+    description: Type must be Manifest
+  describes:
+    type: string
+    format: uri
+    description: The Research Object that this manifest describes
+  createdBy:
+    type: string
+    format: uri
+    description: Agent that created this manifest
+  createdOn:
+    type: string
+    format: date-time
+    description: Creation date of the manifest
+required:
+  - '@id'
+  - '@type'
+  - describes

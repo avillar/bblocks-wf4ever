@@ -1,0 +1,24 @@
+{
+  "@context": {
+    "ro": "http://purl.org/wf4ever/ro#",
+    "ore": "http://www.openarchives.org/ore/terms/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "@vocab": "http://purl.org/wf4ever/ro#",
+    "ResearchObject": "ro:ResearchObject",
+    "title": "dcterms:title",
+    "description": "dcterms:description",
+    "aggregates": {
+      "@id": "ore:aggregates",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "manifest": {
+      "@id": "ro:manifest",
+      "@type": "@id"
+    },
+    "created": {
+      "@id": "dcterms:created",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    }
+  }
+}

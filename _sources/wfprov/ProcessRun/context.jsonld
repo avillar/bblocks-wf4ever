@@ -1,0 +1,40 @@
+{
+  "@context": {
+    "wfprov": "http://purl.org/wf4ever/wfprov#",
+    "wfdesc": "http://purl.org/wf4ever/wfdesc#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "@vocab": "http://purl.org/wf4ever/wfprov#",
+    "ProcessRun": "wfprov:ProcessRun",
+    "WorkflowRun": "wfprov:WorkflowRun",
+    "describedByProcess": {
+      "@id": "wfprov:describedByProcess",
+      "@type": "@id"
+    },
+    "usedInput": {
+      "@id": "wfprov:usedInput",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "wasOutputFrom": {
+      "@id": "prov:generated",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "startedAtTime": {
+      "@id": "prov:startedAtTime",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "endedAtTime": {
+      "@id": "prov:endedAtTime",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "wasPartOfWorkflowRun": {
+      "@id": "wfprov:wasPartOfWorkflowRun",
+      "@type": "@id"
+    },
+    "wasEnactedBy": {
+      "@id": "wfprov:wasEnactedBy",
+      "@type": "@id"
+    }
+  }
+}

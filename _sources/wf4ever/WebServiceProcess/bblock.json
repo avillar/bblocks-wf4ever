@@ -1,0 +1,17 @@
+{
+  "name": "wf4ever:WebServiceProcess",
+  "abstract": "A web service process - a process description whose enactment involves making a web service call.",
+  "status": "under-development",
+  "dateTimeAddition": "2025-11-07T00:00:00Z",
+  "itemClass": "datatype",
+  "register": "ogc-wf4ever",
+  "version": "1.0",
+  "dateOfLastChange": "2025-11-07",
+  "sources": [{"title": "Wf4Ever Ontology - WebServiceProcess", "link": "http://purl.org/wf4ever/wf4ever#WebServiceProcess"}],
+  "maturity": "development",
+  "scope": "unstable",
+  "profileOf": ["ogc.bbr.wf4ever.wfdesc.Process"],
+  "tags": ["wf4ever", "process", "web-service"],
+  "group": "Wf4Ever - wf4ever",
+  "itemIdentifier": "ogc.bbr.wf4ever.wf4ever.WebServiceProcess"
+}

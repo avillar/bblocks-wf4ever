@@ -1,0 +1,47 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+description: Complete workflow provenance trace combining Research Object, Workflow Description, and Execution Provenance
+type: object
+properties:
+  researchObject:
+    description: The Research Object container aggregating all workflow resources
+    allOf:
+      - $ref: ../../ro/ResearchObject/schema.yaml
+    x-jsonld-id: http://purl.org/wf4ever/ro#ResearchObject
+  workflow:
+    description: The workflow description (prospective provenance)
+    allOf:
+      - $ref: ../../wfdesc/Workflow/schema.yaml
+    x-jsonld-id: http://purl.org/wf4ever/wfdesc#Workflow
+  workflowRun:
+    description: The workflow execution trace (retrospective provenance)
+    allOf:
+      - $ref: ../../wfprov/WorkflowRun/schema.yaml
+    x-jsonld-id: http://purl.org/wf4ever/wfprov#WorkflowRun
+  manifest:
+    description: The RO manifest describing the research object
+    allOf:
+      - $ref: ../../ro/Manifest/schema.yaml
+    x-jsonld-id: http://purl.org/wf4ever/ro#Manifest
+  metadata:
+    type: object
+    description: Additional metadata about the complete trace
+    properties:
+      created:
+        type: string
+        format: date-time
+        description: When this trace was created
+      creator:
+        type: string
+        description: Who created this trace
+      description:
+        type: string
+        description: Human-readable description of this workflow execution
+      keywords:
+        type: array
+        items:
+          type: string
+        description: Keywords describing this workflow and execution
+required:
+  - researchObject
+  - workflow
+  - workflowRun

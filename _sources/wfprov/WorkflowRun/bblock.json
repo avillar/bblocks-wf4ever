@@ -1,0 +1,33 @@
+{
+  "name": "wfprov:WorkflowRun",
+  "abstract": "An execution instance of a workflow. A WorkflowRun is a special type of ProcessRun that represents the execution of a complete workflow (wfdesc:Workflow), containing multiple ProcessRuns for its sub-processes.",
+  "highlighted": true,
+  "status": "under-development",
+  "dateTimeAddition": "2025-11-07T00:00:00Z",
+  "itemClass": "datatype",
+  "register": "ogc-wf4ever",
+  "version": "1.0",
+  "dateOfLastChange": "2025-11-07",
+  "sources": [
+    {
+      "title": "Workflow Provenance Ontology - WorkflowRun",
+      "link": "http://purl.org/wf4ever/wfprov#WorkflowRun"
+    }
+  ],
+  "maturity": "development",
+  "scope": "unstable",
+  "profileOf": [
+    "ogc.bbr.wf4ever.wfprov.ProcessRun"
+  ],
+  "dependsOn": [
+    "ogc.bbr.wf4ever.wfdesc.Workflow"
+  ],
+  "tags": [
+    "wfprov",
+    "workflow-run",
+    "execution",
+    "provenance"
+  ],
+  "group": "Wf4Ever - wfprov",
+  "itemIdentifier": "ogc.bbr.wf4ever.wfprov.WorkflowRun"
+}

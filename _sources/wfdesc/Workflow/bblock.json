@@ -1,0 +1,33 @@
+{
+  "name": "wfdesc:Workflow",
+  "abstract": "A composite process that contains sub-processes connected by data links. Workflows are directed graphs where nodes are processes and edges are data flow connections.",
+  "highlighted": true,
+  "status": "under-development",
+  "dateTimeAddition": "2025-11-07T00:00:00Z",
+  "itemClass": "datatype",
+  "register": "ogc-wf4ever",
+  "version": "1.0",
+  "dateOfLastChange": "2025-11-07",
+  "profileOf": [
+    "ogc.bbr.wf4ever.wfdesc.Process"
+  ],
+  "dependsOn": [
+    "ogc.bbr.wf4ever.wfdesc.DataLink",
+    "ogc.api.processes.v1.schemas.process"
+  ],
+  "sources": [
+    {
+      "title": "Workflow Description Ontology - Workflow",
+      "link": "http://purl.org/wf4ever/wfdesc#Workflow"
+    }
+  ],
+  "maturity": "development",
+  "scope": "unstable",
+  "tags": [
+    "workflow",
+    "wfdesc",
+    "composite",
+    "graph"
+  ],
+  "group": "Wf4Ever - wfdesc"
+}

@@ -1,0 +1,31 @@
+{
+  "name": "Wf4Ever Extension Ontology",
+  "abstract": "The wf4ever ontology extends ro, wfdesc and wfprov with specialized artifact and process types commonly used in workflow research objects.",
+  "status": "under-development",
+  "dateTimeAddition": "2025-11-07T00:00:00Z",
+  "itemClass": "schema",
+  "register": "ogc-wf4ever",
+  "version": "1.0",
+  "dateOfLastChange": "2025-11-07",
+  "sources": [
+    {
+      "title": "Wf4Ever Ontology",
+      "link": "http://purl.org/wf4ever/wf4ever"
+    }
+  ],
+  "maturity": "development",
+  "scope": "unstable",
+  "dependsOn": [
+    "ogc.bbr.wf4ever.ro",
+    "ogc.bbr.wf4ever.wfdesc",
+    "ogc.bbr.wf4ever.wfprov"
+  ],
+  "tags": [
+    "wf4ever",
+    "workflow",
+    "research-object",
+    "artifact-types"
+  ],
+  "group": "Wf4Ever - wf4ever",
+  "itemIdentifier": "ogc.bbr.wf4ever.wf4ever"
+}

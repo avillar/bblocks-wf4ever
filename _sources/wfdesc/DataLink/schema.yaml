@@ -1,0 +1,21 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+description: A data flow connection between an output and an input in a workflow
+type: object
+properties:
+  "@type":
+    const: DataLink
+    description: Type identifier for a wfdesc DataLink
+  "@id":
+    type: string
+    format: uri
+    description: Unique identifier for this data link
+  hasSource:
+    $ref: ../Output/schema.yaml
+    description: The source output that produces data
+  hasSink:
+    $ref: ../Input/schema.yaml
+    description: The sink input that consumes data
+required:
+  - "@type"
+  - hasSource
+  - hasSink
