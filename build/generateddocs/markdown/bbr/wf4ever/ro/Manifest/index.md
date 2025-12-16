@@ -79,6 +79,12 @@ Links to the schema:
   "@context": {
     "@vocab": "http://purl.org/wf4ever/ro#",
     "Manifest": "ro:Manifest",
+    "@id": {
+      "@context": {}
+    },
+    "@type": {
+      "@context": {}
+    },
     "describes": {
       "@id": "ore:describes",
       "@type": "@id"

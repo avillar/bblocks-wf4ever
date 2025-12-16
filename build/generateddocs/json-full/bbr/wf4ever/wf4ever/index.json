@@ -19,8 +19,8 @@
   "maturity": "development",
   "scope": "unstable",
   "dependsOn": [
-    "ogc.bbr.wf4ever.wfprov",
     "ogc.bbr.wf4ever.wfdesc",
+    "ogc.bbr.wf4ever.wfprov",
     "ogc.bbr.wf4ever.ro"
   ],
   "tags": [
@@ -37,6 +37,7 @@
     "application/json": "https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wf4ever/schema.json"
   },
   "sourceSchema": "https://ogcincubator.github.io/bblocks-wf4ever/_sources/wf4ever/schema.yaml",
+  "ldContext": "https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wf4ever/context.jsonld",
   "sourceFiles": "https://ogcincubator.github.io/bblocks-wf4ever/_sources/wf4ever/",
   "rdfData": [],
   "validationPassed": true,

@@ -3,11 +3,32 @@
     "Process": "wfdesc:Process",
     "Input": "wfdesc:Input",
     "Output": "wfdesc:Output",
+    "@type": {
+      "@context": {}
+    },
+    "@id": {
+      "@context": {}
+    },
     "name": "rdfs:label",
     "description": "rdfs:comment",
     "hasInput": {
       "@context": {
+        "@type": {
+          "@context": {}
+        },
+        "@id": {
+          "@context": {}
+        },
         "hasArtifact": {
+          "@context": {
+            "@type": {
+              "@context": {}
+            },
+            "@id": {
+              "@context": {}
+            },
+            "value": {}
+          },
           "@id": "wfdesc:hasArtifact",
           "@type": "@id"
         }
@@ -18,7 +39,22 @@
     },
     "hasOutput": {
       "@context": {
+        "@type": {
+          "@context": {}
+        },
+        "@id": {
+          "@context": {}
+        },
         "hasArtifact": {
+          "@context": {
+            "@type": {
+              "@context": {}
+            },
+            "@id": {
+              "@context": {}
+            },
+            "value": {}
+          },
           "@id": "wfdesc:hasArtifact",
           "@type": "@id"
         }

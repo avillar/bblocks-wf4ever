@@ -33,6 +33,7 @@
     "application/json": "https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wf4ever/Document/schema.json"
   },
   "sourceSchema": "https://ogcincubator.github.io/bblocks-wf4ever/_sources/wf4ever/Document/schema.yaml",
+  "ldContext": "https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wf4ever/Document/context.jsonld",
   "sourceFiles": "https://ogcincubator.github.io/bblocks-wf4ever/_sources/wf4ever/Document/",
   "rdfData": [],
   "validationPassed": true,

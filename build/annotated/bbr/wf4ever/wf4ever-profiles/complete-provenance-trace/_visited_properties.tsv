@@ -86,21 +86,21 @@ path	@id
 /workflow/hasDataLink/hasSink/hasArtifact/description	http://www.w3.org/2000/01/rdf-schema#comment
 /workflowRun	http://purl.org/wf4ever/wfprov#WorkflowRun
 /workflowRun/wasInfluencedBy	http://www.w3.org/ns/prov#wasInfluencedBy
-/workflowRun/wasInfluencedBy/provType	
+/workflowRun/wasInfluencedBy/provType	@type
 /workflowRun/wasInfluencedBy/prov:type	
 /workflowRun/wasInfluencedBy/type	
-/workflowRun/wasInfluencedBy/hadMember	
-/workflowRun/wasInfluencedBy/id	
-/workflowRun/wasInfluencedBy/featureType	
-/workflowRun/wasInfluencedBy/entityType	
-/workflowRun/wasInfluencedBy/has_provenance	
-/workflowRun/wasInfluencedBy/has_provenance/provType	
+/workflowRun/wasInfluencedBy/hadMember	http://www.w3.org/ns/prov#hadMember
+/workflowRun/wasInfluencedBy/id	@id
+/workflowRun/wasInfluencedBy/featureType	@type
+/workflowRun/wasInfluencedBy/entityType	@type
+/workflowRun/wasInfluencedBy/has_provenance	http://purl.org/dc/terms/provenance
+/workflowRun/wasInfluencedBy/has_provenance/provType	@type
 /workflowRun/wasInfluencedBy/has_provenance/type	
-/workflowRun/wasInfluencedBy/has_provenance/agentType	
+/workflowRun/wasInfluencedBy/has_provenance/agentType	@type
 /workflowRun/wasInfluencedBy/has_provenance/prov:type	
-/workflowRun/wasInfluencedBy/has_provenance/name	
-/workflowRun/wasInfluencedBy/has_provenance/id	
-/workflowRun/wasInfluencedBy/has_provenance/actedOnBehalfOf	
+/workflowRun/wasInfluencedBy/has_provenance/name	http://www.w3.org/2000/01/rdf-schema#label
+/workflowRun/wasInfluencedBy/has_provenance/id	@id
+/workflowRun/wasInfluencedBy/has_provenance/actedOnBehalfOf	http://www.w3.org/ns/prov#actedOnBehalfOf
 /workflowRun/wasInfluencedBy/has_provenance/actedOnBehalfOf/href	http://www.w3.org/ns/oa#hasTarget
 /workflowRun/wasInfluencedBy/has_provenance/actedOnBehalfOf/rel	http://www.iana.org/assignments/relation
 /workflowRun/wasInfluencedBy/has_provenance/actedOnBehalfOf/anchor	
@@ -108,23 +108,23 @@ path	@id
 /workflowRun/wasInfluencedBy/has_provenance/actedOnBehalfOf/hreflang	http://purl.org/dc/terms/language
 /workflowRun/wasInfluencedBy/has_provenance/actedOnBehalfOf/title	http://www.w3.org/2000/01/rdf-schema#label
 /workflowRun/wasInfluencedBy/has_provenance/actedOnBehalfOf/length	http://purl.org/dc/terms/extent
-/workflowRun/wasInfluencedBy/has_provenance/atLocation	
-/workflowRun/wasInfluencedBy/has_provenance/qualifiedDelegation	
-/workflowRun/wasInfluencedBy/has_provenance/qualifiedDelegation/id	
+/workflowRun/wasInfluencedBy/has_provenance/atLocation	http://www.w3.org/ns/prov#atLocation
+/workflowRun/wasInfluencedBy/has_provenance/qualifiedDelegation	http://www.w3.org/ns/prov#qualifiedDelegation
+/workflowRun/wasInfluencedBy/has_provenance/qualifiedDelegation/id	@id
 /workflowRun/wasInfluencedBy/has_provenance/qualifiedDelegation/type	
-/workflowRun/wasInfluencedBy/has_provenance/qualifiedDelegation/agent	
-/workflowRun/wasInfluencedBy/has_provenance/qualifiedDelegation/hadActivity	
-/workflowRun/wasInfluencedBy/wasGeneratedBy	
-/workflowRun/wasInfluencedBy/wasAttributedTo	
-/workflowRun/wasInfluencedBy/wasDerivedFrom	
-/workflowRun/wasInfluencedBy/alternateOf	
-/workflowRun/wasInfluencedBy/hadPrimarySource	
-/workflowRun/wasInfluencedBy/specializationOf	
-/workflowRun/wasInfluencedBy/wasInvalidatedBy	
-/workflowRun/wasInfluencedBy/wasQuotedFrom	
-/workflowRun/wasInfluencedBy/wasRevisionOf	
-/workflowRun/wasInfluencedBy/atLocation	
-/workflowRun/wasInfluencedBy/links	
+/workflowRun/wasInfluencedBy/has_provenance/qualifiedDelegation/agent	http://www.w3.org/ns/prov#agent
+/workflowRun/wasInfluencedBy/has_provenance/qualifiedDelegation/hadActivity	http://www.w3.org/ns/prov#hadActivity
+/workflowRun/wasInfluencedBy/wasGeneratedBy	http://www.w3.org/ns/prov#wasGeneratedBy
+/workflowRun/wasInfluencedBy/wasAttributedTo	http://www.w3.org/ns/prov#wasAttributedTo
+/workflowRun/wasInfluencedBy/wasDerivedFrom	http://www.w3.org/ns/prov#wasDerivedFrom
+/workflowRun/wasInfluencedBy/alternateOf	http://www.w3.org/ns/prov#alternateOf
+/workflowRun/wasInfluencedBy/hadPrimarySource	http://www.w3.org/ns/prov#hadPrimarySource
+/workflowRun/wasInfluencedBy/specializationOf	http://www.w3.org/ns/prov#specializationOf
+/workflowRun/wasInfluencedBy/wasInvalidatedBy	http://www.w3.org/ns/prov#wasInvalidatedBy
+/workflowRun/wasInfluencedBy/wasQuotedFrom	http://www.w3.org/ns/prov#wasQuotedFrom
+/workflowRun/wasInfluencedBy/wasRevisionOf	http://www.w3.org/ns/prov#wasRevisionOf
+/workflowRun/wasInfluencedBy/atLocation	http://www.w3.org/ns/prov#atLocation
+/workflowRun/wasInfluencedBy/links	http://www.w3.org/2000/01/rdf-schema#seeAlso
 /workflowRun/wasInfluencedBy/links/href	http://www.w3.org/ns/oa#hasTarget
 /workflowRun/wasInfluencedBy/links/rel	http://www.iana.org/assignments/relation
 /workflowRun/wasInfluencedBy/links/anchor	
@@ -132,68 +132,69 @@ path	@id
 /workflowRun/wasInfluencedBy/links/hreflang	http://purl.org/dc/terms/language
 /workflowRun/wasInfluencedBy/links/title	http://www.w3.org/2000/01/rdf-schema#label
 /workflowRun/wasInfluencedBy/links/length	http://purl.org/dc/terms/extent
-/workflowRun/wasInfluencedBy/qualifiedGeneration	
-/workflowRun/wasInfluencedBy/qualifiedGeneration/id	
-/workflowRun/wasInfluencedBy/qualifiedGeneration/atTime	
-/workflowRun/wasInfluencedBy/qualifiedGeneration/hadRole	
-/workflowRun/wasInfluencedBy/qualifiedGeneration/influencer	
-/workflowRun/wasInfluencedBy/qualifiedGeneration/hadActivity	
-/workflowRun/wasInfluencedBy/qualifiedGeneration/activity	
+/workflowRun/wasInfluencedBy/qualifiedGeneration	http://www.w3.org/ns/prov#qualifiedGeneration
+/workflowRun/wasInfluencedBy/qualifiedGeneration/id	@id
+/workflowRun/wasInfluencedBy/qualifiedGeneration/atTime	http://www.w3.org/ns/prov#atTime
+/workflowRun/wasInfluencedBy/qualifiedGeneration/hadRole	http://www.w3.org/ns/prov#hadRole
+/workflowRun/wasInfluencedBy/qualifiedGeneration/influencer	http://www.w3.org/ns/prov#influencer
+/workflowRun/wasInfluencedBy/qualifiedGeneration/hadActivity	http://www.w3.org/ns/prov#hadActivity
+/workflowRun/wasInfluencedBy/qualifiedGeneration/activity	http://www.w3.org/ns/prov#activity
 /workflowRun/wasInfluencedBy/qualifiedGeneration/type	
-/workflowRun/wasInfluencedBy/qualifiedInvalidation	
+/workflowRun/wasInfluencedBy/qualifiedInvalidation	http://www.w3.org/ns/prov#qualifiedInvalidation
 /workflowRun/wasInfluencedBy/qualifiedInvalidation/type	
-/workflowRun/wasInfluencedBy/qualifiedDerivation	
-/workflowRun/wasInfluencedBy/qualifiedDerivation/id	
+/workflowRun/wasInfluencedBy/qualifiedDerivation	http://www.w3.org/ns/prov#qualifiedDerivation
+/workflowRun/wasInfluencedBy/qualifiedDerivation/id	@id
 /workflowRun/wasInfluencedBy/qualifiedDerivation/type	
-/workflowRun/wasInfluencedBy/qualifiedDerivation/hadGeneration	
+/workflowRun/wasInfluencedBy/qualifiedDerivation/hadGeneration	http://www.w3.org/ns/prov#hadGeneration
 /workflowRun/wasInfluencedBy/qualifiedDerivation/hadGeneration/type	
-/workflowRun/wasInfluencedBy/qualifiedDerivation/hadActivity	
-/workflowRun/wasInfluencedBy/qualifiedDerivation/hadUsage	
-/workflowRun/wasInfluencedBy/qualifiedDerivation/hadUsage/id	
+/workflowRun/wasInfluencedBy/qualifiedDerivation/hadActivity	http://www.w3.org/ns/prov#hadActivity
+/workflowRun/wasInfluencedBy/qualifiedDerivation/hadUsage	http://www.w3.org/ns/prov#hadUsage
+/workflowRun/wasInfluencedBy/qualifiedDerivation/hadUsage/id	@id
 /workflowRun/wasInfluencedBy/qualifiedDerivation/hadUsage/type	
-/workflowRun/wasInfluencedBy/qualifiedDerivation/hadUsage/atTime	
-/workflowRun/wasInfluencedBy/qualifiedDerivation/hadUsage/entity	
-/workflowRun/wasInfluencedBy/qualifiedDerivation/entity	
-/workflowRun/wasInfluencedBy/qualifiedAttribution	
-/workflowRun/wasInfluencedBy/qualifiedAttribution/id	
+/workflowRun/wasInfluencedBy/qualifiedDerivation/hadUsage/atTime	http://www.w3.org/ns/prov#atTime
+/workflowRun/wasInfluencedBy/qualifiedDerivation/hadUsage/entity	http://www.w3.org/ns/prov#entity
+/workflowRun/wasInfluencedBy/qualifiedDerivation/entity	http://www.w3.org/ns/prov#entity
+/workflowRun/wasInfluencedBy/qualifiedAttribution	http://www.w3.org/ns/prov#qualifiedAttribution
+/workflowRun/wasInfluencedBy/qualifiedAttribution/id	@id
 /workflowRun/wasInfluencedBy/qualifiedAttribution/type	
-/workflowRun/wasInfluencedBy/qualifiedAttribution/agent	
+/workflowRun/wasInfluencedBy/qualifiedAttribution/agent	http://www.w3.org/ns/prov#agent
 /workflowRun/qualifiedInfluence	http://www.w3.org/ns/prov#qualifiedInfluence
 /workflowRun/qualifiedInfluence/id	@id
 /workflowRun/qualifiedInfluence/influencer	http://www.w3.org/ns/prov#influencer
 /workflowRun/qualifiedInfluence/entity	http://www.w3.org/ns/prov#entity
 /workflowRun/qualifiedInfluence/activity	http://www.w3.org/ns/prov#activity
 /workflowRun/qualifiedInfluence/agent	http://www.w3.org/ns/prov#agent
-/workflowRun/id	@id
-/workflowRun/type	@type
-/workflowRun/activityType	
+/workflowRun/provType	@type
 /workflowRun/prov:type	
+/workflowRun/type	@type
+/workflowRun/id	@id
+/workflowRun/activityType	@type
 /workflowRun/endedAtTime	http://www.w3.org/ns/prov#endedAtTime
-/workflowRun/wasAssociatedWith	
-/workflowRun/wasInformedBy	
-/workflowRun/used	
-/workflowRun/wasStartedBy	
-/workflowRun/wasEndedBy	
-/workflowRun/invalidated	
-/workflowRun/generated	
-/workflowRun/atLocation	
-/workflowRun/qualifiedUsage	
-/workflowRun/qualifiedCommunication	
+/workflowRun/wasAssociatedWith	http://www.w3.org/ns/prov#wasAssociatedWith
+/workflowRun/wasInformedBy	http://www.w3.org/ns/prov#wasInformedBy
+/workflowRun/used	http://www.w3.org/ns/prov#used
+/workflowRun/wasStartedBy	http://www.w3.org/ns/prov#wasStartedBy
+/workflowRun/wasEndedBy	http://www.w3.org/ns/prov#wasEndedBy
+/workflowRun/invalidated	http://www.w3.org/ns/prov#invalidated
+/workflowRun/generated	http://www.w3.org/ns/prov#generated
+/workflowRun/atLocation	http://www.w3.org/ns/prov#atLocation
+/workflowRun/qualifiedUsage	http://www.w3.org/ns/prov#qualifiedUsage
+/workflowRun/qualifiedCommunication	http://www.w3.org/ns/prov#qualifiedCommunication
 /workflowRun/qualifiedCommunication/type	
-/workflowRun/qualifiedStart	
-/workflowRun/qualifiedStart/id	
+/workflowRun/qualifiedStart	http://www.w3.org/ns/prov#qualifiedStart
+/workflowRun/qualifiedStart/id	@id
 /workflowRun/qualifiedStart/type	
-/workflowRun/qualifiedStart/atTime	
-/workflowRun/qualifiedStart/entity	
-/workflowRun/qualifiedStart/hadActivity	
-/workflowRun/qualifiedEnd	
+/workflowRun/qualifiedStart/atTime	http://www.w3.org/ns/prov#atTime
+/workflowRun/qualifiedStart/entity	http://www.w3.org/ns/prov#entity
+/workflowRun/qualifiedStart/hadActivity	http://www.w3.org/ns/prov#hadActivity
+/workflowRun/qualifiedEnd	http://www.w3.org/ns/prov#qualifiedEnd
 /workflowRun/qualifiedEnd/type	
-/workflowRun/qualifiedAssociation	
-/workflowRun/qualifiedAssociation/id	
+/workflowRun/qualifiedAssociation	http://www.w3.org/ns/prov#qualifiedAssociation
+/workflowRun/qualifiedAssociation/id	@id
 /workflowRun/qualifiedAssociation/type	
-/workflowRun/qualifiedAssociation/agent	
-/workflowRun/qualifiedAssociation/hadRole	
-/workflowRun/qualifiedAssociation/hadPlan	
+/workflowRun/qualifiedAssociation/agent	http://www.w3.org/ns/prov#agent
+/workflowRun/qualifiedAssociation/hadRole	http://www.w3.org/ns/prov#hadRole
+/workflowRun/qualifiedAssociation/hadPlan	http://www.w3.org/ns/prov#hadPlan
 /workflowRun/describedByProcess	http://purl.org/wf4ever/wfprov#describedByProcess
 /workflowRun/usedInput	http://purl.org/wf4ever/wfprov#usedInput
 /workflowRun/usedInput/id	

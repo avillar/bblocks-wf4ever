@@ -94,6 +94,12 @@ Links to the schema:
   "@context": {
     "@vocab": "http://purl.org/wf4ever/ro#",
     "AggregatedAnnotation": "ro:AggregatedAnnotation",
+    "@id": {
+      "@context": {}
+    },
+    "@type": {
+      "@context": {}
+    },
     "annotatesAggregatedResource": {
       "@id": "ro:annotatesAggregatedResource",
       "@type": "@id"

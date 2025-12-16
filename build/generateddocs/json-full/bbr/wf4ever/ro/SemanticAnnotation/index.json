@@ -32,6 +32,7 @@
     "application/json": "https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/ro/SemanticAnnotation/schema.json"
   },
   "sourceSchema": "https://ogcincubator.github.io/bblocks-wf4ever/_sources/ro/SemanticAnnotation/schema.yaml",
+  "ldContext": "https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/ro/SemanticAnnotation/context.jsonld",
   "sourceFiles": "https://ogcincubator.github.io/bblocks-wf4ever/_sources/ro/SemanticAnnotation/",
   "rdfData": [],
   "validationPassed": true,

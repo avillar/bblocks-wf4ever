@@ -246,9 +246,20 @@ Links to the schema:
   "@context": {
     "@vocab": "http://purl.org/wf4ever/ro#",
     "Folder": "ro:Folder",
+    "@id": {
+      "@context": {}
+    },
+    "@type": {
+      "@context": {}
+    },
     "name": "dcterms:title",
     "description": "dcterms:description",
     "hasEntry": {
+      "@context": {
+        "@id": {
+          "@context": {}
+        }
+      },
       "@id": "ro:hasEntry",
       "@type": "@id",
       "@container": "@set"

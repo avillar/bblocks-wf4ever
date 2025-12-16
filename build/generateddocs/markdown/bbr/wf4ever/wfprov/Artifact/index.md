@@ -95,7 +95,22 @@ Links to the schema:
     "@vocab": "http://purl.org/wf4ever/wfprov#",
     "wasInfluencedBy": {
       "@context": {
-        "type": "dct:type"
+        "type": "dct:type",
+        "href": {
+          "@type": "@id",
+          "@id": "oa:hasTarget"
+        },
+        "rel": {
+          "@context": {
+            "@base": "http://www.iana.org/assignments/relation/"
+          },
+          "@id": "http://www.iana.org/assignments/relation",
+          "@type": "@id"
+        },
+        "anchor": {},
+        "hreflang": "dct:language",
+        "title": "rdfs:label",
+        "length": "dct:extent"
       },
       "@id": "prov:wasInfluencedBy",
       "@type": "@id"
@@ -104,21 +119,72 @@ Links to the schema:
       "@context": {
         "influencer": {
           "@context": {
-            "type": "dct:type"
+            "type": "dct:type",
+            "href": {
+              "@type": "@id",
+              "@id": "oa:hasTarget"
+            },
+            "rel": {
+              "@context": {
+                "@base": "http://www.iana.org/assignments/relation/"
+              },
+              "@id": "http://www.iana.org/assignments/relation",
+              "@type": "@id"
+            },
+            "anchor": {},
+            "hreflang": "dct:language",
+            "title": "rdfs:label",
+            "length": "dct:extent"
           },
           "@id": "prov:influencer",
           "@type": "@id"
         },
         "activity": {
           "@context": {
-            "type": "dct:type"
+            "type": "dct:type",
+            "wasAssociatedWith": {
+              "@context": {
+                "href": {
+                  "@type": "@id",
+                  "@id": "oa:hasTarget"
+                },
+                "rel": {
+                  "@context": {
+                    "@base": "http://www.iana.org/assignments/relation/"
+                  },
+                  "@id": "http://www.iana.org/assignments/relation",
+                  "@type": "@id"
+                },
+                "anchor": {},
+                "hreflang": "dct:language",
+                "title": "rdfs:label",
+                "length": "dct:extent"
+              },
+              "@id": "prov:wasAssociatedWith",
+              "@type": "@id"
+            }
           },
           "@id": "prov:activity",
           "@type": "@id"
         },
         "agent": {
           "@context": {
-            "type": "dct:type"
+            "href": {
+              "@type": "@id",
+              "@id": "oa:hasTarget"
+            },
+            "rel": {
+              "@context": {
+                "@base": "http://www.iana.org/assignments/relation/"
+              },
+              "@id": "http://www.iana.org/assignments/relation",
+              "@type": "@id"
+            },
+            "anchor": {},
+            "type": "dct:type",
+            "hreflang": "dct:language",
+            "title": "rdfs:label",
+            "length": "dct:extent"
           },
           "@id": "prov:agent",
           "@type": "@id"
@@ -127,37 +193,219 @@ Links to the schema:
       "@id": "prov:qualifiedInfluence",
       "@type": "@id"
     },
-    "href": {
-      "@type": "@id",
-      "@id": "oa:hasTarget"
-    },
-    "rel": {
-      "@context": {
-        "@base": "http://www.iana.org/assignments/relation/"
-      },
-      "@id": "http://www.iana.org/assignments/relation",
-      "@type": "@id"
-    },
+    "provType": "@type",
+    "prov:type": {},
     "type": "@type",
-    "hreflang": "dct:language",
-    "title": "rdfs:label",
-    "length": "dct:extent",
-    "Artifact": "wfprov:Artifact",
-    "id": "@id",
-    "describedByParameter": {
-      "@id": "wfprov:describedByParameter",
+    "hadMember": {
+      "@id": "prov:hadMember",
       "@type": "@id"
     },
-    "value": "prov:value",
-    "wasOutputFrom": {
-      "@id": "wfprov:wasOutputFrom",
+    "id": "@id",
+    "featureType": "@type",
+    "entityType": "@type",
+    "has_provenance": {
+      "@context": {
+        "type": "dct:type",
+        "wasAssociatedWith": {
+          "@id": "prov:wasAssociatedWith",
+          "@type": "@id",
+          "@context": {
+            "href": {
+              "@type": "@id",
+              "@id": "oa:hasTarget"
+            },
+            "rel": {
+              "@context": {
+                "@base": "http://www.iana.org/assignments/relation/"
+              },
+              "@id": "http://www.iana.org/assignments/relation",
+              "@type": "@id"
+            },
+            "anchor": {},
+            "hreflang": "dct:language",
+            "title": "rdfs:label",
+            "length": "dct:extent"
+          }
+        }
+      },
+      "@id": "dct:provenance",
+      "@type": "@id"
+    },
+    "wasGeneratedBy": {
+      "@context": {
+        "type": "dct:type",
+        "wasAssociatedWith": {
+          "@context": {
+            "href": {
+              "@type": "@id",
+              "@id": "oa:hasTarget"
+            },
+            "rel": {
+              "@context": {
+                "@base": "http://www.iana.org/assignments/relation/"
+              },
+              "@id": "http://www.iana.org/assignments/relation",
+              "@type": "@id"
+            },
+            "anchor": {},
+            "hreflang": "dct:language",
+            "title": "rdfs:label",
+            "length": "dct:extent"
+          },
+          "@id": "prov:wasAssociatedWith",
+          "@type": "@id"
+        }
+      },
+      "@id": "prov:wasGeneratedBy",
+      "@type": "@id"
+    },
+    "wasAttributedTo": {
+      "@context": {
+        "href": {
+          "@type": "@id",
+          "@id": "oa:hasTarget"
+        },
+        "rel": {
+          "@context": {
+            "@base": "http://www.iana.org/assignments/relation/"
+          },
+          "@id": "http://www.iana.org/assignments/relation",
+          "@type": "@id"
+        },
+        "anchor": {},
+        "type": "dct:type",
+        "hreflang": "dct:language",
+        "title": "rdfs:label",
+        "length": "dct:extent"
+      },
+      "@id": "prov:wasAttributedTo",
+      "@type": "@id"
+    },
+    "wasDerivedFrom": {
+      "@id": "prov:wasDerivedFrom",
+      "@type": "@id"
+    },
+    "alternateOf": {
+      "@id": "prov:alternateOf",
+      "@type": "@id"
+    },
+    "hadPrimarySource": {
+      "@id": "prov:hadPrimarySource",
+      "@type": "@id"
+    },
+    "specializationOf": {
+      "@id": "prov:specializationOf",
+      "@type": "@id"
+    },
+    "wasInvalidatedBy": {
+      "@context": {
+        "type": "dct:type",
+        "wasAssociatedWith": {
+          "@context": {
+            "href": {
+              "@type": "@id",
+              "@id": "oa:hasTarget"
+            },
+            "rel": {
+              "@context": {
+                "@base": "http://www.iana.org/assignments/relation/"
+              },
+              "@id": "http://www.iana.org/assignments/relation",
+              "@type": "@id"
+            },
+            "anchor": {},
+            "hreflang": "dct:language",
+            "title": "rdfs:label",
+            "length": "dct:extent"
+          },
+          "@id": "prov:wasAssociatedWith",
+          "@type": "@id"
+        }
+      },
+      "@id": "prov:wasInvalidatedBy",
+      "@type": "@id"
+    },
+    "wasQuotedFrom": {
+      "@id": "prov:wasQuotedFrom",
+      "@type": "@id"
+    },
+    "wasRevisionOf": {
+      "@id": "prov:wasRevisionOf",
+      "@type": "@id"
+    },
+    "atLocation": {
+      "@id": "prov:atLocation",
+      "@type": "@id"
+    },
+    "links": {
+      "@context": {
+        "href": {
+          "@type": "@id",
+          "@id": "oa:hasTarget"
+        },
+        "rel": {
+          "@context": {
+            "@base": "http://www.iana.org/assignments/relation/"
+          },
+          "@id": "http://www.iana.org/assignments/relation",
+          "@type": "@id"
+        },
+        "anchor": {},
+        "type": "dct:type",
+        "hreflang": "dct:language",
+        "title": "rdfs:label",
+        "length": "dct:extent"
+      },
+      "@id": "rdfs:seeAlso"
+    },
+    "qualifiedGeneration": {
+      "@id": "prov:qualifiedGeneration",
+      "@type": "@id"
+    },
+    "qualifiedInvalidation": {
+      "@id": "prov:qualifiedInvalidation",
+      "@type": "@id"
+    },
+    "qualifiedDerivation": {
+      "@context": {
+        "hadActivity": {
+          "@context": {
+            "type": "dct:type",
+            "wasAssociatedWith": {
+              "@context": {
+                "href": {
+                  "@type": "@id",
+                  "@id": "oa:hasTarget"
+                },
+                "rel": {
+                  "@context": {
+                    "@base": "http://www.iana.org/assignments/relation/"
+                  },
+                  "@id": "http://www.iana.org/assignments/relation",
+                  "@type": "@id"
+                },
+                "anchor": {},
+                "hreflang": "dct:language",
+                "title": "rdfs:label",
+                "length": "dct:extent"
+              },
+              "@id": "prov:wasAssociatedWith",
+              "@type": "@id"
+            }
+          },
+          "@id": "prov:hadActivity",
+          "@type": "@id"
+        }
+      },
+      "@id": "prov:qualifiedDerivation",
+      "@type": "@id"
+    },
+    "qualifiedAttribution": {
+      "@id": "prov:qualifiedAttribution",
       "@type": "@id"
     },
     "activityType": "@type",
     "agentType": "@type",
-    "entityType": "@type",
-    "featureType": "@type",
-    "provType": "@type",
     "Activity": "prov:Activity",
     "ActivityInfluence": "prov:ActivityInfluence",
     "Agent": "prov:Agent",
@@ -228,6 +476,7 @@ Links to the schema:
       "@id": "prov:startedAtTime",
       "@type": "xsd:dateTime"
     },
+    "value": "prov:value",
     "provenanceUriTemplate": "prov:provenanceUriTemplate",
     "pairKey": {
       "@id": "prov:pairKey",
@@ -243,14 +492,6 @@ Links to the schema:
     },
     "agent": {
       "@id": "prov:agent",
-      "@type": "@id"
-    },
-    "alternateOf": {
-      "@id": "prov:alternateOf",
-      "@type": "@id"
-    },
-    "atLocation": {
-      "@id": "prov:atLocation",
       "@type": "@id"
     },
     "entity": {
@@ -273,16 +514,8 @@ Links to the schema:
       "@id": "prov:hadGeneration",
       "@type": "@id"
     },
-    "hadMember": {
-      "@id": "prov:hadMember",
-      "@type": "@id"
-    },
     "hadPlan": {
       "@id": "prov:hadPlan",
-      "@type": "@id"
-    },
-    "hadPrimarySource": {
-      "@id": "prov:hadPrimarySource",
       "@type": "@id"
     },
     "hadRole": {
@@ -309,10 +542,6 @@ Links to the schema:
       "@id": "prov:qualifiedAssociation",
       "@type": "@id"
     },
-    "qualifiedAttribution": {
-      "@id": "prov:qualifiedAttribution",
-      "@type": "@id"
-    },
     "qualifiedCommunication": {
       "@id": "prov:qualifiedCommunication",
       "@type": "@id"
@@ -321,20 +550,8 @@ Links to the schema:
       "@id": "prov:qualifiedDelegation",
       "@type": "@id"
     },
-    "qualifiedDerivation": {
-      "@id": "prov:qualifiedDerivation",
-      "@type": "@id"
-    },
     "qualifiedEnd": {
       "@id": "prov:qualifiedEnd",
-      "@type": "@id"
-    },
-    "qualifiedGeneration": {
-      "@id": "prov:qualifiedGeneration",
-      "@type": "@id"
-    },
-    "qualifiedInvalidation": {
-      "@id": "prov:qualifiedInvalidation",
       "@type": "@id"
     },
     "qualifiedPrimarySource": {
@@ -357,10 +574,6 @@ Links to the schema:
       "@id": "prov:qualifiedUsage",
       "@type": "@id"
     },
-    "specializationOf": {
-      "@id": "prov:specializationOf",
-      "@type": "@id"
-    },
     "used": {
       "@id": "prov:used",
       "@type": "@id"
@@ -369,36 +582,12 @@ Links to the schema:
       "@id": "prov:wasAssociatedWith",
       "@type": "@id"
     },
-    "wasAttributedTo": {
-      "@id": "prov:wasAttributedTo",
-      "@type": "@id"
-    },
-    "wasDerivedFrom": {
-      "@id": "prov:wasDerivedFrom",
-      "@type": "@id"
-    },
     "wasEndedBy": {
       "@id": "prov:wasEndedBy",
       "@type": "@id"
     },
-    "wasGeneratedBy": {
-      "@id": "prov:wasGeneratedBy",
-      "@type": "@id"
-    },
     "wasInformedBy": {
       "@id": "prov:wasInformedBy",
-      "@type": "@id"
-    },
-    "wasInvalidatedBy": {
-      "@id": "prov:wasInvalidatedBy",
-      "@type": "@id"
-    },
-    "wasQuotedFrom": {
-      "@id": "prov:wasQuotedFrom",
-      "@type": "@id"
-    },
-    "wasRevisionOf": {
-      "@id": "prov:wasRevisionOf",
       "@type": "@id"
     },
     "wasStartedBy": {
@@ -407,10 +596,6 @@ Links to the schema:
     },
     "has_anchor": {
       "@id": "prov:has_anchor",
-      "@type": "@id"
-    },
-    "has_provenance": {
-      "@id": "dct:provenance",
       "@type": "@id"
     },
     "has_query_service": {
@@ -466,7 +651,17 @@ Links to the schema:
       "@type": "@id"
     },
     "name": "rdfs:label",
-    "links": "rdfs:seeAlso",
+    "Artifact": "wfprov:Artifact",
+    "describedByParameter": {
+      "@id": "wfprov:describedByParameter",
+      "@type": "@id"
+    },
+    "wasOutputFrom": {
+      "@id": "wfprov:wasOutputFrom",
+      "@type": "@id"
+    },
+    "algorithm": {},
+    "checksum": {},
     "prov": "http://www.w3.org/ns/prov#",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",

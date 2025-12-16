@@ -11,8 +11,8 @@
   "version": "1.0",
   "dateOfLastChange": "2025-11-12",
   "dependsOn": [
-    "ogc.bbr.wf4ever.wfdesc.Input",
-    "ogc.bbr.wf4ever.wfdesc.Output"
+    "ogc.bbr.wf4ever.wfdesc.Output",
+    "ogc.bbr.wf4ever.wfdesc.Input"
   ],
   "sources": [
     {

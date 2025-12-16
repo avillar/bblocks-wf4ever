@@ -296,6 +296,9 @@ Links to the schema:
     "Parameter": "wfdesc:Parameter",
     "DataLink": "wfdesc:DataLink",
     "Configuration": "wfdesc:Configuration",
+    "@type": {
+      "@context": {}
+    },
     "name": "rdfs:label",
     "description": "rdfs:comment",
     "hasInput": {
